@@ -1,0 +1,174 @@
+﻿:root {
+    --bg1: #07070b;
+    --bg2: #110b14;
+    --accent1: #b44a6a;
+    --accent2: #6d3a8e;
+    --gold: #e2c07a;
+    --text: #f3eef3;
+    --muted: #cbbdcc;
+    --card: rgba(18, 16, 24, 0.65);
+    --border: rgba(226,192,122,.35);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: -apple-system, system-ui, Segoe UI, Roboto, Arial;
+    color: var(--text);
+    min-height: 100vh;
+    background: radial-gradient(900px 600px at 20% 10%, rgba(180,74,106,.20), transparent 60%), radial-gradient(700px 500px at 80% 20%, rgba(109,58,142,.18), transparent 55%), radial-gradient(900px 700px at 50% 90%, rgba(226,192,122,.10), transparent 60%), linear-gradient(180deg, var(--bg1), var(--bg2));
+}
+
+/* =========================
+   LAYOUT GLOBAL
+   ========================= */
+
+.page {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+    position: relative;
+}
+
+/* =========================
+   ACCUEIL – CARTE GLASS
+   ========================= */
+
+.card-home {
+    width: min(680px, 90vw);
+    padding: 28px 28px 22px;
+    border-radius: 26px;
+    background: var(--card);
+    border: 1px solid rgba(255,255,255,0.10);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    box-shadow: 0 30px 90px rgba(0,0,0,.65), inset 0 1px 0 rgba(255,255,255,.06);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+}
+
+.logo {
+    width: 88px;
+    height: 88px;
+    border-radius: 20px;
+    box-shadow: 0 14px 40px rgba(0,0,0,.45);
+}
+
+h1 {
+    margin: 0;
+    font-size: 34px;
+}
+
+.subtitle {
+    margin: 0;
+    font-size: 18px;
+    color: rgba(203,189,204,0.85);
+}
+
+.btn {
+    width: 100%;
+    max-width: 540px;
+    padding: 16px 18px;
+    border-radius: 18px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 900;
+    font-size: 18px;
+    color: #1b0f16;
+    background: linear-gradient(90deg, var(--gold), var(--accent1));
+    box-shadow: 0 18px 45px rgba(0,0,0,.45);
+}
+
+    .btn:active {
+        transform: translateY(1px);
+    }
+
+.hint {
+    margin: 0;
+    font-size: 14px;
+    color: rgba(255,255,255,.55);
+    text-align: center;
+}
+
+/* =========================
+   PAGE CADEAU
+   ========================= */
+
+.back {
+    align-self: flex-start;
+    margin-bottom: 12px;
+    color: var(--muted);
+    text-decoration: none;
+}
+
+.frame {
+    width: 100%;
+    max-width: 440px;
+    position: relative;
+    padding: 16px;
+    border-radius: 22px;
+    background: linear-gradient(180deg, rgba(18,16,24,.75), rgba(12,10,18,.55));
+    border: 1px solid var(--border);
+    box-shadow: 0 18px 60px rgba(0,0,0,.55);
+}
+
+    .frame::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        pointer-events: none;
+        border-radius: 22px;
+        opacity: .55;
+        background: radial-gradient(18px 18px at 18px 18px, rgba(180,74,106,.55) 0 40%, transparent 45%), radial-gradient(16px 16px at 34px 30px, rgba(226,192,122,.45) 0 40%, transparent 45%), radial-gradient(14px 14px at 26px 42px, rgba(109,58,142,.45) 0 40%, transparent 45%), radial-gradient(18px 18px at calc(100% - 18px) 18px, rgba(180,74,106,.55) 0 40%, transparent 45%), radial-gradient(16px 16px at calc(100% - 34px) 30px, rgba(226,192,122,.45) 0 40%, transparent 45%), radial-gradient(14px 14px at calc(100% - 26px) 42px, rgba(109,58,142,.45) 0 40%, transparent 45%), radial-gradient(18px 18px at 18px calc(100% - 18px), rgba(180,74,106,.55) 0 40%, transparent 45%), radial-gradient(16px 16px at 34px calc(100% - 30px), rgba(226,192,122,.45) 0 40%, transparent 45%), radial-gradient(14px 14px at 26px calc(100% - 42px), rgba(109,58,142,.45) 0 40%, transparent 45%), radial-gradient(18px 18px at calc(100% - 18px) calc(100% - 18px), rgba(180,74,106,.55) 0 40%, transparent 45%), radial-gradient(16px 16px at calc(100% - 34px) calc(100% - 30px), rgba(226,192,122,.45) 0 40%, transparent 45%), radial-gradient(14px 14px at calc(100% - 26px) calc(100% - 42px), rgba(109,58,142,.45) 0 40%, transparent 45%);
+    }
+
+.frame-inner {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.main-image {
+    width: 100%;
+    border-radius: 18px;
+    border: 1px solid rgba(255,255,255,.06);
+    display: block;
+}
+
+.quote-card {
+    background: var(--card);
+    border: 1px solid rgba(226,192,122,.25);
+    border-radius: 18px;
+    padding: 14px 14px 12px;
+    backdrop-filter: blur(8px);
+}
+
+#quote {
+    margin: 0;
+    font-size: 18px;
+    line-height: 1.35;
+}
+
+.meta {
+    margin-top: 10px;
+    font-size: 12px;
+    color: var(--muted);
+    display: flex;
+    justify-content: flex-end;
+}

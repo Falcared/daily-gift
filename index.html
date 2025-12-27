@@ -1,0 +1,40 @@
+﻿<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Le Cadeau du Jour</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="manifest" href="manifest.webmanifest" />
+    <meta name="theme-color" content="#0b0b10" />
+
+    <!-- iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link rel="apple-touch-icon" href="logo_cadeau.png">
+</head>
+<body>
+    <main class="page">
+        <section class="card-home">
+            <header class="hero">
+                <img class="logo" src="logo_cadeau.png" alt="Logo" />
+                <h1>Le cadeau du jour</h1>
+                <p class="subtitle">Une petite dose d’amour, chaque matin.</p>
+            </header>
+
+            <a class="btn" href="cadeau.html">Ouvrir le cadeau du jour</a>
+
+            <p class="hint">
+                Sur iPhone : Safari → Partager → “Sur l’écran d’accueil”.
+            </p>
+        </section>
+    </main>
+
+    <script>
+        // Service worker plus tard si besoin
+        // if ("serviceWorker" in navigator) {
+        //     navigator.serviceWorker.register("./sw.js");
+        // }
+    </script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+﻿{
+  "name": "Le Cadeau du Jour",
+  "short_name": "Cadeau",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#0b0b10",
+  "theme_color": "#0b0b10",
+  "icons": [
+    {
+      "src": "logo_cadeau.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "logo_cadeau.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
